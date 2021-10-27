@@ -1,4 +1,4 @@
-package kg.geektech.taskapp.ui.onBoard;
+package kg.geektech.taskapp35.ui.onBoard;
 
 import android.os.Bundle;
 import androidx.activity.OnBackPressedCallback;
@@ -15,6 +15,7 @@ import android.widget.Button;
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 import org.jetbrains.annotations.NotNull;
 import kg.geektech.taskapp.R;
+import kg.geektech.taskapp35.ui.Prefs;
 
 public class BoardFragment extends Fragment implements BoardAdapter.FinishBoard {
 
@@ -46,6 +47,8 @@ public class BoardFragment extends Fragment implements BoardAdapter.FinishBoard 
     }
 
     private void skipBtnLogic(View view) {
+        Prefs prefs = new Prefs(requireContext());
+        prefs.saveBoardState();
         Button buttonSkip = view.findViewById(R.id.skipTv);
         buttonSkip.setOnClickListener(v -> navigate());
     }
@@ -53,7 +56,7 @@ public class BoardFragment extends Fragment implements BoardAdapter.FinishBoard 
     private void navigate() {
         NavController navController = Navigation.findNavController(requireActivity(),
                 R.id.nav_host_fragment_activity_main);
-        navController.navigate(R.id.navigation_home);
+        navController.navigateUp();
     }
 
     @Override

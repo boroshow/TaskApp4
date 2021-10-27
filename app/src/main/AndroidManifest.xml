@@ -5,13 +5,13 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="TaskAPP2021"
+        android:label="TaskApp35"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskApp">
         <activity
-            android:name=".ui.activity.MainActivity"
-            android:label="@string/app_name">
+            android:name="kg.geektech.taskapp35.ui.activity.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.media.action.IMAGE_CAPTURE" />
                 <action android:name="android.intent.action.MAIN" />

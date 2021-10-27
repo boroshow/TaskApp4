@@ -7,33 +7,44 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="kg.geektech.taskapp.ui.home.HomeFragment"
+        android:name="kg.geektech.taskapp35.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="kg.geektech.taskapp.ui.dashboard.DashboardFragment"
+        android:name="kg.geektech.taskapp35.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
     <fragment
         android:id="@+id/fouthFragment"
-        android:name="kg.geektech.taskapp.ui.fourthFrag.FouthFragment"
+        android:name="kg.geektech.taskapp35.ui.fourthFrag.FouthFragment"
         android:label="Fouth"
         tools:layout="@layout/fragment_fouth" />
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="kg.geektech.taskapp.ui.notifications.NotificationsFragment"
+        android:name="kg.geektech.taskapp35.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/taskFragment"
-        android:name="kg.geektech.taskapp.ui.newsFrag.NewsFragment"
+        android:name="kg.geektech.taskapp35.ui.newsFrag.NewsFragment"
         android:label="fragment_task"
         tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/boardFragment"
-        android:name="kg.geektech.taskapp.ui.onBoard.BoardFragment"
+        android:name="kg.geektech.taskapp35.ui.onBoard.BoardFragment"
         android:label="fragment_board"
         tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="kg.geektech.taskapp35.ui.auth.LoginFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/fragmentOther"
+        android:name="kg.geektech.taskapp35.FragmentOther"
+        android:label="fragment_other"
+        tools:layout="@layout/fragment_other" />
+
 </navigation>

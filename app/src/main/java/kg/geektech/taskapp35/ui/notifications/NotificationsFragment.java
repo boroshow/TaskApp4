@@ -1,4 +1,4 @@
-package kg.geektech.taskapp.ui.notifications;
+package kg.geektech.taskapp35.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

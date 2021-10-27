@@ -1,15 +1,16 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "kg.geektech.taskapp"
+        applicationId "kg.geektech.taskapp35"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -45,4 +46,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     //Библиотека дот-индикатор
     implementation 'com.tbuonomo:dotsindicator:4.2'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    //
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
 }

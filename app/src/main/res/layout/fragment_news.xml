@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ui.newsFrag.NewsFragment">
+    tools:context="kg.geektech.taskapp35.ui.newsFrag.NewsFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -20,14 +20,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
-            android:hint="Заголовок " />
+            android:hint="Заголовок "
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:text="choose file"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="@color/purple_200"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_marginTop="16dp"
+        android:background="@color/white"
         android:text="Save"
         android:layout_height="wrap_content"/>
 

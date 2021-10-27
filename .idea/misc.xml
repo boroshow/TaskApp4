@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/btn_background.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/gridient.xml" value="0.1605" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29739583333333336" />
         <entry key="app/src/main/res/layout/fragment_board.xml" value="0.2451202392578125" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.29739583333333336" />
-        <entry key="app/src/main/res/layout/fragment_fouth.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/fragment_fouth.xml" value="0.28179043743641913" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.28040540540540543" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/item_list.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/layout/fragment_other.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/fragment_profile_fragment.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/item_list.xml" value="0.2554517133956386" />
         <entry key="app/src/main/res/layout/pager_board.xml" value="0.31197916666666664" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.29635416666666664" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1415" />

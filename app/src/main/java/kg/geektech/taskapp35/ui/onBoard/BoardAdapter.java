@@ -1,4 +1,4 @@
-package kg.geektech.taskapp.ui.onBoard;
+package kg.geektech.taskapp35.ui.onBoard;
 
 import android.view.LayoutInflater;
 import android.view.View;

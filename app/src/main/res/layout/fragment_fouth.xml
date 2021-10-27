@@ -1,33 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ui.fourthFrag.FouthFragment">
-
-    <ImageView
-        android:id="@+id/imgg"
-        android:layout_width="500dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ic_launcher_background"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_change"
-        android:layout_marginTop="16dp"
+    tools:context="kg.geektech.taskapp35.ui.fourthFrag.FouthFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainCont"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:backgroundTint="@color/purple_700"
-        android:text="change photo"
-        android:gravity="center"
-        android:layout_marginHorizontal="20dp"
-        android:textColor="@color/white"
-        android:textSize="20sp"/>
+        android:layout_height="match_parent">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="120dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-
-
-
-
-</LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                app:layout_constraintTop_toTopOf="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                />
+            <View
+                app:layout_constraintTop_toTopOf="@+id/container2"
+                android:layout_width="1dp"
+                android:layout_height="110dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/container2"
+                />
+            <View
+                app:layout_constraintTop_toTopOf="@+id/container2"
+                android:layout_width="1dp"
+                app:layout_constraintStart_toEndOf="@+id/container1"
+                android:layout_height="110dp"
+                android:background="@color/black"
+                />
+        <EditText
+            app:layout_constraintBottom_toTopOf="@+id/container2"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/nikNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="80dp" />
+        <LinearLayout
+            app:layout_constraintEnd_toStartOf="@+id/container2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/container1"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/timeIv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_4k_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5min"
+                android:textColor="@color/black" />
+        </LinearLayout>
+            <LinearLayout
+                app:layout_constraintStart_toEndOf="@id/container1"
+                app:layout_constraintEnd_toStartOf="@id/container3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/container2"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="170dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/messageIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_add_comment_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/container3"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/container2">
+                <ImageView
+                    android:id="@+id/locationIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_add_location_24" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="location"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/img_iv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleY="1.4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/avatarIv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@color/black"
+        tools:ignore="ContentDescription" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textTT"
+            android:layout_marginTop="400dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="I am user , you should read that,because i say. My dog"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignOut"
+            app:cornerRadius="20dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTT"
+            android:layout_margin="60dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    ...
+</androidx.constraintlayout.widget.ConstraintLayout>

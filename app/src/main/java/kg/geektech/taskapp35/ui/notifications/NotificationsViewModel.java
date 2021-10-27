@@ -1,4 +1,4 @@
-package kg.geektech.taskapp.ui.notifications;
+package kg.geektech.taskapp35.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
